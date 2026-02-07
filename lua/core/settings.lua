@@ -28,11 +28,14 @@ vim.o.confirm = true
 -- Clear highlights on search when pressing <Esc> in normal mode
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 
+--hide tabs
+vim.o.showtabline = 0
+-- hide bottom line line v,g
+vim.o.laststatus = 0
+vim.o.expandtab = true
+vim.o.tabstop = 2
+vim.o.softtabstop = 2
+vim.o.shiftwidth = 2
 
-
-
-
-
-
-
-
+-- Set CUrsor
+ vim.o.guicursor = 'a:block'
